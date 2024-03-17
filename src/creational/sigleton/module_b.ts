@@ -5,7 +5,7 @@ const myDatabaseClassic = MyDatabaseFunction;
 myDatabaseClassic.add({ name: 'Roberto', age: 30 });
 myDatabaseClassic.add({ name: 'Joana', age: 50 });
 myDatabaseClassic.add({ name: 'Luíza', age: 25 });
-myDatabaseClassic.remove(0)
+myDatabaseClassic.remover(0);
 myDatabaseClassic.show();
 
 console.log(myDatabaseClassic === myDatabaseFromModuleA);

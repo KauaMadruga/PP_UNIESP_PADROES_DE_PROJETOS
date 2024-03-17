@@ -7,7 +7,12 @@ export const MyDatabaseModule = {
     users.push(user);
   },
 
-   //Fazer função para remover usuário
+  remover(index: number): void {
+    if (index >= 0 && index < users.length) {
+      const removerUser = users.splice(index, 1)[0];
+      console.log(`Usuário ${(removerUser.name, removerUser.age)} removido`);
+    }
+  },
 
 
   show(): void {
